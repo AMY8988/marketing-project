@@ -1,0 +1,242 @@
+$primary: #9c2bd1;
+$danger: #ff4136;
+
+$btn-focus-width:  none;
+$btn-focus-box-shadow:       none;
+$btn-active-bg-shade-amount:      40%;
+$btn-transition: 0.3s;
+
+ //@import "../node_modules/bootstrap/scss/bootstrap";
+//@import "../node_modules/bootswatch/dist/vapor/variables";
+//@import "~bootstrap/scss/bootstrap";
+//@import "~bootswatch/dist/vapor/bootswatch";
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+
+
+.brand{
+    width: 50%;
+}
+
+.brand{
+    img{
+        width: 50px;
+    }
+}
+
+.navbar{
+    box-shadow: 0 0 20px #00000020;
+    user-select: auto;
+    backdrop-filter: blur(3px);
+    padding: 10px 0;
+}
+
+.nav-scroll{
+    position: fixed;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 0 15px #00000020;
+    z-index: 1000;
+    transition: 0.4s;
+}
+
+.nav-scroll .menu-icon{
+    color: #9c2bd1;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+// .Active{
+//     border: 3px solid #9c2bd1 !important;
+//     border-radius: 30px !important;
+
+// }
+
+.active{
+    transform: scale(1.1) !important;
+}
+
+
+.nav-link{
+    margin-left: 20px;
+}
+
+
+
+.home{
+    background-image: url(../_theme/Bg-Shape.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right;
+    background-position-y: top;
+}
+
+.home-content{
+    margin-top: 100px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.mouse{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+.vertical-icons{
+    position: absolute;
+    left: 10%;
+    bottom: 50px;
+    width: 50px;
+}
+
+.vertical-icons a{
+    transition: 0.5s;
+}
+
+.vertical-icons a:hover{
+    transform: scale(1.3);
+}
+
+.about{
+    background-image: url(../_data/bg-2.svg);
+    background-position: right;
+}
+
+.services{
+    background-image: url(../_data/bg-3.svg);
+}
+
+.service-card{
+
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.service-card-para{
+    height: 220px;
+    transition: 0.5s;
+
+
+}
+
+.service-card:hover{
+    box-shadow: 0 0 15px #b9b2b2 !important;
+
+}
+
+.service-card img{
+    transition: 0.5s;
+}
+
+.service-card:hover img{
+    transform: scale(1.3);
+}
+
+.prices-card .prices-card-2{
+    height: 450px !important;
+}
+
+.prices-btn{
+    transition: ease-out 0.6s;
+    box-shadow: inset 0 0 0 0 #9c2bd1;
+}
+
+.prices-btn:hover{
+    box-shadow: inset 300px 0 0 0 #9c2bd1;
+    color: white;
+}
+
+.slick-dots{
+     li{
+         width: 10px !important;
+         height: 10px !important;
+        background-color: transparent;
+        border: 2px solid #9c2bd1;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+}
+
+.slick-dots li.slick-active{
+    background-color: #9c2bd1 !important;
+    transform: scale(1.2);
+}
+
+.slick-dots{
+    button::before{
+        display: none;
+    }
+}
+
+.footer{
+
+    background-image: url(../_data/Asset.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+}
+
+.contact-two{
+    position: absolute;
+    bottom: 40px;
+    // left: 200px;
+}
+
+.contact-link a{
+    text-decoration: none;
+}
+
+.contact-table td{
+     width: 120px;
+}
+
+// @media screen and (max-width: 992px){
+
+// }
+
+
+@media screen and (max-width:992px){
+
+    .nav-link{
+        border-radius: 20px;
+        padding:  10px 15px!important;
+        box-shadow: 0 0 10px #00000020;
+        margin: 5px;
+
+    }
+
+
+    .contact-text{
+
+            color: black !important;
+
+
+    }
+
+    .contact-two{
+        left: 10px;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .home-text{
+        width: 220px;
+    }
+
+
+}
+
+
