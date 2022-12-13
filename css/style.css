@@ -1,7 +1,5 @@
-
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .brand {
@@ -13,8 +11,7 @@
 }
 
 .navbar {
-  -webkit-box-shadow: 0 0 20px #00000020;
-          box-shadow: 0 0 20px #00000020;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1254901961);
   -webkit-user-select: auto;
      -moz-user-select: auto;
       -ms-user-select: auto;
@@ -24,14 +21,16 @@
   padding: 10px 0;
 }
 
+.scroll-nav {
+  transition: 0.5s;
+}
+
 .nav-scroll {
   position: fixed;
   width: 100%;
-  -webkit-box-shadow: 0 0 15px #00000020;
-          box-shadow: 0 0 15px #00000020;
+  color: whitesmoke;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1254901961);
   z-index: 1000;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .nav-scroll .menu-icon {
@@ -40,22 +39,6 @@
 
 .navbar-toggler {
   border: none !important;
-  transition: 0.2s;
-}
-
-.navbar-toggler:focus{
-  box-shadow: none;
-}
-
-.navbar-toggler:active{
-  text-shadow: 0 0 15px #b9b2b2 !important;
-}
-
-.active {
-  -webkit-transform: scale(1.1) !important;
-          transform: scale(1.1) !important;
-          font-weight: bolder !important;
-          text-shadow: 0 0 15px #b9b2b2 !important;
 }
 
 .nav-link {
@@ -63,12 +46,15 @@
   transition: 0.3s;
 }
 
-.nav-link:hover{
-  font-weight: bolder !important;
-  text-shadow: 0 0 15px #b9b2b2 !important
+.active {
+  transform: scale(1.01) !important;
+  text-shadow: 0 0 15px #b9b2b2 !important;
 }
 
-
+.nav-link:hover {
+  transform: scale(1.01) !important;
+  text-shadow: 0 0 15px #b9b2b2 !important;
+}
 
 .home {
   background-image: url(../_theme/Bg-Shape.png);
@@ -77,8 +63,7 @@
   background-position: right;
   background-position-y: top;
 }
-
-.home-content {
+.home .home-content {
   margin-top: 100px;
   width: 100%;
   margin-left: 0;
@@ -100,18 +85,21 @@
 }
 
 .vertical-icons a {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .vertical-icons a:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .about {
   background-image: url(../_data/bg-2.svg);
   background-position: right;
+}
+
+.about-text {
+  width: 75%;
+  text-align: start !important;
 }
 
 .services {
@@ -120,30 +108,25 @@
 
 .service-card {
   border-radius: 30px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
 }
 
 .service-card-para {
   height: 220px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .service-card:hover {
-  -webkit-box-shadow: 0 0 15px #b9b2b2 !important;
-          box-shadow: 0 0 15px #b9b2b2 !important;
+  box-shadow: 0 0 15px #b9b2b2 !important;
 }
 
 .service-card img {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .service-card:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .prices-card .prices-card-2 {
@@ -151,15 +134,12 @@
 }
 
 .prices-btn {
-  -webkit-transition: ease-out 0.6s;
   transition: ease-out 0.6s;
-  -webkit-box-shadow: inset 0 0 0 0 #9c2bd1;
-          box-shadow: inset 0 0 0 0 #9c2bd1;
+  box-shadow: inset 0 0 0 0 #9c2bd1;
 }
 
 .prices-btn:hover {
-  -webkit-box-shadow: inset 300px 0 0 0 #9c2bd1;
-          box-shadow: inset 300px 0 0 0 #9c2bd1;
+  box-shadow: inset 300px 0 0 0 #9c2bd1;
   color: white;
 }
 
@@ -169,14 +149,12 @@
   background-color: transparent;
   border: 2px solid #9c2bd1;
   border-radius: 50%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .slick-dots li.slick-active {
   background-color: #9c2bd1 !important;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .slick-dots button::before {
@@ -207,59 +185,23 @@
   .nav-link {
     border-radius: 20px;
     padding: 10px 15px !important;
-    -webkit-box-shadow: 0 0 10px #00000020;
-            box-shadow: 0 0 10px #00000020;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1254901961);
     margin: 5px;
   }
- 
+  .about-text {
+    width: 75% !important;
+  }
   .contact-two {
     left: 10px;
     bottom: 0px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .home-text {
     width: 220px;
   }
-}
-/*# sourceMappingURL=style.css.map */
-
-
-
-/* services */
-
-.bg-image{
-  background-image: url("../_data/bg-3.svg");
-}
-
-.service-img{
-  box-shadow:inset 0 0 15px #fdf7f7 !important;
-  border-radius: 50%;
-}
-
-.service-fixed-img{
-  background-image: url("../_data//multiracial-group-asia-young-creative-people-smart-casual-wear-discussing-business-clapping-laughing-smiling-together-brainstorm-meeting-office-coworker-teamwork-successful-concept.jpg");
-  height: 400px;
-  filter:brightness(0.7);
-  box-shadow: inset 0 10px 10px #00000050;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-/* animation delay */
-.delay1{
-  animation-delay: 0.3s;
-}
-
-.delay2{
-  animation-delay: 0.6s;
-}
-
-.delay3{
-  animation-delay: 0.9s;
-}
-
-.delay4{
-  animation-delay: 0.12s;
-}
+  .about-text {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}/*# sourceMappingURL=style.css.map */
